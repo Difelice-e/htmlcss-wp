@@ -1,0 +1,159 @@
+/* RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGINA  */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    /* font-size: 0; */
+}
+
+body {
+    padding-top: 100px;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* SEZIONE INTESTAZIONE */
+header {
+    margin-bottom: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    height: 50px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    border-right: 1px solid grey;
+}
+
+header ol {
+    list-style-type: none;
+}
+
+header ol li {
+    float: left;
+    padding: 10px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* SEZIONE PRINCIPALE  */
+.slide {
+    margin-bottom: 20px;
+}
+
+.slide > div {
+    position: relative;
+}
+
+.slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+.slide img::after {
+    content: '';
+    display: block;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.slide .slide__text {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: 50%;
+    color: white;
+
+}
+
+
+
+/* SEZIONE CON COLONNE  */
+.col {
+    margin-bottom: 10px;
+}
+
+.col div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.col div:nth-child(4n) {
+    margin-right: 0;
+}
+
+.col--0 {
+    width: 100%;
+    height: 80px;
+}
+
+.col--1, .col--3 {
+    width: 200px;
+    height: 380px;
+}
+
+.col--2 {
+    width: calc(100% - 40px - 200px - 200px);
+    height: 380px;
+}
+
+/* SEZIONE FOOTER  */
+footer {
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+/* DEBUG  */
+
+/* .debug header {
+    background-color: pink;
+} */
+
+.debug .slide {
+    background-color: palegoldenrod;
+}
+
+.debug .col {
+    background-color: blue;
+}
+
+.debug .col div {
+    background-color: rgb(64, 197, 197);
+}
+
+.debug footer {
+    background-color: purple;
+}
