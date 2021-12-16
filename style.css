@@ -12,10 +12,6 @@
     /* font-size: 0; */
 }
 
-body {
-    padding-top: 100px;
-}
-
 .clearfix::after {
     content: '';
     display: table;
@@ -28,14 +24,14 @@ header {
     background-color: white;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 9;
 }
 
 header img {
     height: 50px;
     padding-right: 10px;
     margin-bottom: 20px;
-    border-right: 1px solid grey;
+    border-right: 1px solid lightgray;
 }
 
 header ol {
@@ -69,7 +65,7 @@ nav a:hover {
 .slide img {
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 450px;
     display: block;
     border-radius: 10px;;
 }
@@ -89,7 +85,7 @@ nav a:hover {
 
 .slide .slide__text {
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
     left: 50px;
     width: 50%;
     color: white;
@@ -98,7 +94,7 @@ nav a:hover {
 
 /* SEZIONE CON COLONNE  */
 .col {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .col > div {
@@ -111,6 +107,11 @@ nav a:hover {
     margin-right: 0;
 }
 
+.col p {
+    font-size: 18px;
+    color: grey;
+}
+
 .col--0 {
     width: 100%;
     padding: 10px 0px 20px;
@@ -119,11 +120,6 @@ nav a:hover {
 .col--0 h1 {
     font-size: 30px;
     font-weight: 900;
-}
-
-.col--0 p {
-    font-size: 18px;
-    color: grey;
 }
 
 .col--1, .col--3 {
@@ -162,13 +158,21 @@ nav a:hover {
 
 .col .col__text h4 {
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 
 
 /* SEZIONE FOOTER  */
 footer {
-    height: 50px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+footer span {
+    color: red;
+    font-size: 22px;
 }
 
 
@@ -196,6 +200,6 @@ footer {
     background-color: rgb(64, 197, 197);
 } */
 
-.debug footer {
+/* .debug footer {
     background-color: purple;
-}
+} */
